@@ -1,0 +1,27 @@
+h1 {
+    margin: 60px 0;
+    border: 1px solid;
+    
+}
+
+p{
+    margin:5px;
+    border:1px solid;
+    
+  
+    background-color: tomato;
+    
+
+}
+
+div {
+    
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 100px 250px 400px 100px;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
