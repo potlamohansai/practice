@@ -16,5 +16,5 @@ function insertDash(num) {
 
 //driver Code
 
-let output = insertDash(01246834686);
+let output = insertDash(01246);
 console.log(output);
