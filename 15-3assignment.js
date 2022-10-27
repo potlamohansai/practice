@@ -4,11 +4,14 @@
 
 
 
-function secDerivative (b ,m) {
-    let ans = math.derivative((x^b + x*(e^(b*m))),(b,m));
+//double derivative of given function is f''(x) = (b^2-b) * x ^(b-2)
+// At x=m it becomes (b^2 -b) * m ^ (b-2)
+function secondDerivative (b ,m) {
+    let ans = (Math.pow(b,2) -b) * (Math.pow(m, (b-2)));
     
     return ans;
 }
 
-let result = secDerivative(4,2);
+//driver code
+let result = secondDerivative(4,2);
 console.log(result);
