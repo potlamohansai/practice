@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id ="heading">This Assignment the number of &lt;p&gt; tags on the screen when we clicked on button</h1>
+    <p>This is the p tagged element 1</p>
+    <p>This is the p tagged element 2</p>
+    <p>This is the p tagged element 3</p>
+    <button onclick="fnc()">Click Me</button>
+    <br/>
+
+<script>
+function fnc(){
+    let para = document.getElementsByTagName("p")
+    let tag = document.createElement("h2").innerHTML = "There are "+para.length+" p tagged elements in the DOM"
+    document.body.append(tag)
+}
+</script>    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 11</title>
+</head>
+<body>
+    <form id="form1" onsubmit="getFormValue()">
+    Name: <input type="text" id="name"/><br/>
+    <button type="submit">Submit</button>
+    </form>
+    <h2 id="output"></h2>
+    <script>
+        function getFormValue(){
+            event.preventDefault()
+            let value = document.getElementById("name").value
+            console.log(value);
+            document.getElementById("output").innerHTML=value
+        }
+       
+        const beforeUnloadListener = (event) => {
+            event.preventDefault();
+            return event.returnValue = "Are you sure you want to exit?";
+        };
+
+        const nameInput = document.querySelector("#name");
+
+        nameInput.addEventListener("input", (event) => {
+        if (event.target.value !== "") {
+            addEventListener("beforeunload", beforeUnloadListener, {capture: true});
+        } else {
+            removeEventListener("beforeunload", beforeUnloadListener, {capture: true});
+        }
+        });
+    </script>
+</body>
+</html>

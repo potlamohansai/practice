@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+<body>
+    <p>First Number</p>
+    <input id="inp1" type = "text" placeholder="enter first number" name="input" />
+    <p>Second Number</p>
+    <input id="inp2" type = "text" placeholder="enter Second number" name="input"/>
+    <br/>
+    <br/>
+    <button onclick="addition()">Addition</button>
+    <br/>
+    <h2 id="output"></h2>
+
+<script>
+
+function addition(){
+    let x = document.getElementById("inp1").value
+    let y = document.getElementById("inp2").value
+    let op = parseInt(x)+parseInt(y)
+    document.getElementById("output").innerHTML = "The Addition of two Numbers ="+ op;
+    document.get
+}
+
+</script>    
+    
+</body>
+</html>

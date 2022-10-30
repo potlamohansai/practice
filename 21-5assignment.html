@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id ="heading">This Assignment creates a h4 tag when we clicked on button</h1>
+    <button onclick="fnc()">Click Me</button>
+
+<script>
+function fnc(){
+    const element = document.createElement("h4")
+    element.textContent="This is the h4 tag element"
+    document.body.appendChild(element)
+}
+</script>    
+</body>
+</html>
